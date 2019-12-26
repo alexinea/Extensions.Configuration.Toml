@@ -1,6 +1,6 @@
 <p>
     <a href="https://alexinea.com" target="_blank" title="TOML Configuration Provider">
-        <img width="100" src="./misc/images/toml-logo.png" />
+        <img width="100" src="./msic/images/toml-logo.png" />
     </a>
 </p>
 
