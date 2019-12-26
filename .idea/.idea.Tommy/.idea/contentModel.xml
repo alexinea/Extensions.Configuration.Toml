@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\AlexLEWIS\.Rider2019.3\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\AlexLEWIS\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\AlexLEWIS\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Tommy.1395700627.00" t="ExcludeRecursive" />
+    <e p="D:\Development\Tommy" t="IncludeFlat">
+      <e p=".git\info\exclude" t="IncludeRecursive" />
+      <e p=".gitignore" t="Include" />
+      <e p="build\common-1-x.props" t="Include" />
+      <e p="build\common-2-x.props" t="Include" />
+      <e p="build\common-3-x.props" t="Include" />
+      <e p="build\common.props" t="Include" />
+      <e p="build\misc.props" t="Include" />
+      <e p="build\package.props" t="Include" />
+      <e p="build\version-1-x.props" t="Include" />
+      <e p="build\version-2-x.props" t="Include" />
+      <e p="build\version-3-x.props" t="Include" />
+      <e p="build\version.props" t="Include" />
+      <e p="LICENSE" t="Include" />
+      <e p="msic\images\toml-logo.png" t="Include" />
+      <e p="NuGet.config" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Publish.bat" t="Include" />
+      <e p="PublishToMyGet.bat" t="Include" />
+      <e p="README.md" t="Include" />
+      <e p="solution" t="Include">
+        <e p="build" t="Include" />
+      </e>
+      <e p="src" t="Include">
+        <e p="Config.Toml" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="Config.Toml.csproj" t="IncludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="net451" t="Include">
+                <e p="Config.Toml.AssemblyInfo.cs" t="Include" />
+              </e>
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Config.Toml.AssemblyInfo.cs" t="Include" />
+              </e>
+              <e p="netstandard2.0" t="Include">
+                <e p="Config.Toml.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Toml" t="Include">
+            <e p="TomlConfigurationFileParser.cs" t="Include" />
+            <e p="TomlConfigurationProvider.cs" t="Include" />
+            <e p="TomlConfigurationSource.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Ref.1.x" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="net451" t="Include">
+                <e p="Ref.1.x.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Ref.1.x.csproj" t="IncludeRecursive" />
+          <e p="TomlConfigurationExtensions.cs" t="Include" />
+        </e>
+        <e p="Ref.2.x" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netstandard2.0" t="Include">
+                <e p="Ref.2.x.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Ref.2.x.csproj" t="IncludeRecursive" />
+          <e p="TomlConfigurationExtensions.cs" t="Include" />
+        </e>
+        <e p="Ref.3.x" t="IncludeRecursive">
+          <e p="bin" t="ExcludeRecursive" />
+          <e p="obj" t="ExcludeRecursive">
+            <e p="Debug" t="Include">
+              <e p="netcoreapp3.1" t="Include">
+                <e p="Ref.3.x.AssemblyInfo.cs" t="Include" />
+              </e>
+              <e p="netstandard2.0" t="Include">
+                <e p="Ref.3.x.AssemblyInfo.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Ref.3.x.csproj" t="IncludeRecursive" />
+          <e p="Toml" t="Include">
+            <e p="TomlStreamConfigurationProvider.cs" t="Include" />
+            <e p="TomlStreamConfigurationSource.cs" t="Include" />
+          </e>
+          <e p="YamlConfigurationExtensions.cs" t="Include" />
+        </e>
+      </e>
+      <e p="tests" t="Include" />
+      <e p="Tommy.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

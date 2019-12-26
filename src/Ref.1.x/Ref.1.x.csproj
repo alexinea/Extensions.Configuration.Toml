@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\build\common-1-x.props" />
+
+    <PropertyGroup>
+        <TargetFramework>net451</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <AssemblyName>Alexinea.Extensions.Configuration.Toml</AssemblyName>
+        <PackageId>Alexinea.Extensions.Configuration.Toml</PackageId>
+        <Description>Toml configuration provider implementation for Microsoft.Extensions.Configuration.</Description>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <DocumentationFile>Alexinea.Extensions.Configuration.Toml.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DocumentationFile>Alexinea.Extensions.Configuration.Toml.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Nett" Version="0.13.0" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="1.1.2" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="1.1.2" />
+        <PackageReference Include="NETStandard.Library" Version="1.6.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="../Config.Toml/**/*.cs" Exclude="../Config.Toml/obj/**/*" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+<Project>
+	<PropertyGroup Label="Package">
+		<Product>Alexinea.Extensions.Configuration.Toml</Product>
+		<Authors>AlexLEWIS</Authors>
+		<RepositoryUrl>https://github.com/alexinea/Extensions.Configuration.Toml</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageProjectUrl>https://github.com/alexinea/Extensions.Configuration.Toml</PackageProjectUrl>
+		<PackageIcon>toml-logo.png</PackageIcon>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageTags>configuration;toml</PackageTags>
+	</PropertyGroup>
+</Project>
