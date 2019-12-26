@@ -1,3 +1,9 @@
+<p>
+    <a href="https://alexinea.com" target="_blank" title="TOML Configuration Provider">
+        <img width="100" src="./misc/images/toml-logo.png" />
+    </a>
+</p>
+
 # TOML Configuration Provider
 
 [![NuGet](https://img.shields.io/nuget/v/Alexinea.Extensions.Configuration.Toml.svg)](https://nuget.org/packages/Alexinea.Extensions.Configuration.Toml) [![Nuget](https://img.shields.io/nuget/dt/Alexinea.Extensions.Configuration.Toml.svg)](https://nuget.org/packages/Alexinea.Extensions.Configuration.Toml)
@@ -18,6 +24,11 @@ Just install the [provider](https://nuget.org/packages/Alexinea.Extensions.Confi
 ```
 PM> Install-Package Alexinea.Extensions.Configuration.Toml
 ```
+
+## Other Providers
+
++ [Alexinea.Extensons.Configuration.Toml](https://github.com/alexinea/Extensions.Configuration.Toml)
++ [Alexinea.Extensons.Configuration.Yaml](https://github.com/alexinea/Extensions.Configuration.Yaml)
 
 ## License
 

@@ -3,8 +3,8 @@
   <component name="ContentModelStore">
     <e p="C:\Users\AlexLEWIS\.Rider2019.3\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\AlexLEWIS\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\AlexLEWIS\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Toml.1843046163.00" t="ExcludeRecursive" />
-    <e p="D:\Development\Tommy" t="IncludeFlat">
+    <e p="C:\Users\AlexLEWIS\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Toml.-2002051611.00" t="ExcludeRecursive" />
+    <e p="D:\Development\Extensions.Configuration.Toml" t="IncludeFlat">
       <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p=".gitignore" t="Include" />
       <e p="build\common-1-x.props" t="Include" />
