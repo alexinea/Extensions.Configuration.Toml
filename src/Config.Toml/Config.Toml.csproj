@@ -21,7 +21,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Nett" Version="0.13.0" />
+        <PackageReference Include="Nett" Version="0.15.0" />
     </ItemGroup>
 
     <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp3.1'">

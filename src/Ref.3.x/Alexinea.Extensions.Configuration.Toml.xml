@@ -117,7 +117,7 @@
             <param name="configureSource">Configures the source.</param>
             <returns>The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.</returns>
         </member>
-        <member name="M:Microsoft.Extensions.Configuration.TomlConfigurationExtensions.AddYamlStream(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.IO.Stream)">
+        <member name="M:Microsoft.Extensions.Configuration.TomlConfigurationExtensions.AddTomlStream(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.IO.Stream)">
             <summary>
             Adds a TOML configuration source to <paramref name="builder"/>.
             </summary>

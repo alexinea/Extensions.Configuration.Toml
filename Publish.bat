@@ -7,7 +7,7 @@ if not exist nuget_pub (
 
 ::clear nuget_pub
 for /R "nuget_pub" %%s in (*) do (
-    del %%s
+    del "%%s""
 )
 
 dotnet pack src/Ref.1.x -c Release -o nuget_pub
@@ -15,7 +15,7 @@ dotnet pack src/Ref.2.x -c Release -o nuget_pub
 dotnet pack src/Ref.3.x -c Release -o nuget_pub
 
 for /R "nuget_pub" %%s in (*symbols.nupkg) do (
-    del %%s
+    del "%%s""
 )
 
 echo.
@@ -25,7 +25,7 @@ set /p key=input key:
 set source=https://api.nuget.org/v3/index.json
 
 for /R "nuget_pub" %%s in (*.nupkg) do ( 
-    call nuget push %%s %key% -Source %source%	
+    call nuget push "%%s" %key% -Source %source%	
 	echo.
 )
 
