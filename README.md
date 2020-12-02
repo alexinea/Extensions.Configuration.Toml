@@ -6,7 +6,8 @@
 
 # TOML Configuration Provider
 
-[![NuGet](https://img.shields.io/nuget/v/Alexinea.Extensions.Configuration.Toml.svg)](https://nuget.org/packages/Alexinea.Extensions.Configuration.Toml) [![Nuget](https://img.shields.io/nuget/dt/Alexinea.Extensions.Configuration.Toml.svg)](https://nuget.org/packages/Alexinea.Extensions.Configuration.Toml)
+[![NuGet](https://img.shields.io/nuget/v/Alexinea.Extensions.Configuration.Toml.svg)](https://nuget.org/packages/Alexinea.Extensions.Configuration.Toml) 
+[![Nuget](https://img.shields.io/nuget/dt/Alexinea.Extensions.Configuration.Toml.svg)](https://nuget.org/packages/Alexinea.Extensions.Configuration.Toml)
 
 A Toml format configuration provider for Microsoft.Extensions.Configuration.
 
