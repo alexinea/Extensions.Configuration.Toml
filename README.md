@@ -13,10 +13,15 @@ A Toml format configuration provider for Microsoft.Extensions.Configuration.
 
 Supports following runtimes:
 
++ .NET 5
 + .NET Core
 + .NET Framework 4.5.1 or higher
 
-Yaml Configuration Provider provides 1.x, 2.x, and 3.x versions, which correspond to the Microsoft.Extensions.Configuration of the three eras. You can choose the applicable version.
+Tips for older versions:
+
+> Toml Configuration Provider provides 1.x, 2.x, and 3.x versions, which correspond to the Microsoft.Extensions.Configuration of the three eras. You can choose the applicable version.
+
+Starting from 5.0, our dependencies will be consistent with Microsoft.Extensions.Configuration.
 
 ## Installing
 

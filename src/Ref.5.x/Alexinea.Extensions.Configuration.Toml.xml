@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Alexinea.Extensions.Configuration.Toml</name>
+    </assembly>
+    <members>
+        <member name="T:Alexinea.Extensions.Configuration.Toml.TomlConfigurationProvider">
+            <summary>
+            A Toml file based <see cref="T:Microsoft.Extensions.Configuration.FileConfigurationProvider"/>.
+            </summary>
+        </member>
+        <member name="M:Alexinea.Extensions.Configuration.Toml.TomlConfigurationProvider.#ctor(Alexinea.Extensions.Configuration.Toml.TomlConfigurationSource)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="source">The <see cref="T:Alexinea.Extensions.Configuration.Toml.TomlConfigurationSource"/>.</param>
+        </member>
+        <member name="M:Alexinea.Extensions.Configuration.Toml.TomlConfigurationProvider.Load(System.IO.Stream)">
+            <summary>
+            Loads Toml configuration key/values from a stream into a provider.
+            </summary>
+            <param name="stream">The toml <see cref="T:System.IO.Stream"/> to load configuration data from.</param>
+        </member>
+        <member name="T:Alexinea.Extensions.Configuration.Toml.TomlConfigurationSource">
+            <summary>
+            Represents a TOML file as an <see cref="T:Microsoft.Extensions.Configuration.IConfigurationSource"/>.
+            </summary>
+        </member>
+        <member name="M:Alexinea.Extensions.Configuration.Toml.TomlConfigurationSource.Build(Microsoft.Extensions.Configuration.IConfigurationBuilder)">
+            <summary>
+            Builds the <see cref="T:Alexinea.Extensions.Configuration.Toml.TomlConfigurationProvider"/> for this source.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.</param>
+            <returns>An <see cref="T:Alexinea.Extensions.Configuration.Toml.TomlConfigurationProvider"/></returns>
+        </member>
+        <member name="T:Alexinea.Extensions.Configuration.Toml.TomlStreamConfigurationProvider">
+            <summary>
+            Loads configuration key/values from a toml stream into a provider.
+            </summary>
+        </member>
+        <member name="M:Alexinea.Extensions.Configuration.Toml.TomlStreamConfigurationProvider.#ctor(Alexinea.Extensions.Configuration.Toml.TomlStreamConfigurationSource)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="source">The <see cref="T:Alexinea.Extensions.Configuration.Toml.TomlStreamConfigurationSource"/>.</param>
+        </member>
+        <member name="M:Alexinea.Extensions.Configuration.Toml.TomlStreamConfigurationProvider.Load(System.IO.Stream)">
+            <summary>
+            Loads toml configuration key/values from a stream into a provider.
+            </summary>
+            <param name="stream">The toml <see cref="T:System.IO.Stream"/> to load configuration data from.</param>
+        </member>
+        <member name="T:Alexinea.Extensions.Configuration.Toml.TomlStreamConfigurationSource">
+            <summary>
+            Represents a YAML file as an <see cref="T:Microsoft.Extensions.Configuration.IConfigurationSource"/>.
+            </summary>
+        </member>
+        <member name="M:Alexinea.Extensions.Configuration.Toml.TomlStreamConfigurationSource.Build(Microsoft.Extensions.Configuration.IConfigurationBuilder)">
+            <summary>
+            Builds the <see cref="T:Alexinea.Extensions.Configuration.Toml.TomlStreamConfigurationProvider"/> for this source.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.</param>
+            <returns>An <see cref="T:Alexinea.Extensions.Configuration.Toml.TomlStreamConfigurationProvider"/></returns>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.TomlConfigurationExtensions">
+            <summary>
+            Extension methods for adding <see cref="T:Alexinea.Extensions.Configuration.Toml.TomlConfigurationProvider"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.TomlConfigurationExtensions.AddTomlFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String)">
+            <summary>
+            Adds the TOML configuration provider at <paramref name="path"/> to <paramref name="builder"/>.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/> to add to.</param>
+            <param name="path">Path relative to the base path stored in 
+            <see cref="P:Microsoft.Extensions.Configuration.IConfigurationBuilder.Properties"/> of <paramref name="builder"/>.</param>
+            <returns>The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.TomlConfigurationExtensions.AddTomlFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Boolean)">
+            <summary>
+            Adds the TOML configuration provider at <paramref name="path"/> to <paramref name="builder"/>.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/> to add to.</param>
+            <param name="path">Path relative to the base path stored in 
+            <see cref="P:Microsoft.Extensions.Configuration.IConfigurationBuilder.Properties"/> of <paramref name="builder"/>.</param>
+            <param name="optional">Whether the file is optional.</param>
+            <returns>The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.TomlConfigurationExtensions.AddTomlFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Adds the TOML configuration provider at <paramref name="path"/> to <paramref name="builder"/>.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/> to add to.</param>
+            <param name="path">Path relative to the base path stored in 
+            <see cref="P:Microsoft.Extensions.Configuration.IConfigurationBuilder.Properties"/> of <paramref name="builder"/>.</param>
+            <param name="optional">Whether the file is optional.</param>
+            <param name="reloadOnChange">Whether the configuration should be reloaded if the file changes.</param>
+            <returns>The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.TomlConfigurationExtensions.AddTomlFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.FileProviders.IFileProvider,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Adds a TOML configuration source to <paramref name="builder"/>.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/> to add to.</param>
+            <param name="provider">The <see cref="T:Microsoft.Extensions.FileProviders.IFileProvider"/> to use to access the file.</param>
+            <param name="path">Path relative to the base path stored in 
+            <see cref="P:Microsoft.Extensions.Configuration.IConfigurationBuilder.Properties"/> of <paramref name="builder"/>.</param>
+            <param name="optional">Whether the file is optional.</param>
+            <param name="reloadOnChange">Whether the configuration should be reloaded if the file changes.</param>
+            <returns>The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.TomlConfigurationExtensions.AddTomlFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Action{Alexinea.Extensions.Configuration.Toml.TomlConfigurationSource})">
+            <summary>
+            Adds a TOML configuration source to <paramref name="builder"/>.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/> to add to.</param>
+            <param name="configureSource">Configures the source.</param>
+            <returns>The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.TomlConfigurationExtensions.AddTomlStream(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.IO.Stream)">
+            <summary>
+            Adds a TOML configuration source to <paramref name="builder"/>.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/> to add to.</param>
+            <param name="stream">The <see cref="T:System.IO.Stream"/> to read the yaml configuration data from.</param>
+            <returns>The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.</returns>
+        </member>
+    </members>
+</doc>

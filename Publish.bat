@@ -10,9 +10,10 @@ for /R "nuget_pub" %%s in (*) do (
     del "%%s""
 )
 
-dotnet pack src/Ref.1.x -c Release -o nuget_pub
-dotnet pack src/Ref.2.x -c Release -o nuget_pub
-dotnet pack src/Ref.3.x -c Release -o nuget_pub
+::dotnet pack src/Ref.1.x -c Release -o nuget_pub
+::dotnet pack src/Ref.2.x -c Release -o nuget_pub
+::dotnet pack src/Ref.3.x -c Release -o nuget_pub
+dotnet pack src/Ref.5.x -c Release -o nuget_pub --no-restore
 
 for /R "nuget_pub" %%s in (*symbols.nupkg) do (
     del "%%s""
@@ -21,11 +22,8 @@ for /R "nuget_pub" %%s in (*symbols.nupkg) do (
 echo.
 echo.
 
-set /p key=input key:
-set source=https://api.nuget.org/v3/index.json
-
 for /R "nuget_pub" %%s in (*.nupkg) do ( 
-    call nuget push "%%s" %key% -Source %source%	
+    dotnet nuget push "%%s" -s "Release" --skip-duplicate
 	echo.
 )
 

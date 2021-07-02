@@ -1,11 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <Import Project="..\..\build\common.props" />
-
-    <PropertyGroup>
-        <TargetFrameworks>netcoreapp3.1;netstandard2.0;net451</TargetFrameworks>
-    </PropertyGroup>
-
+    
     <PropertyGroup>
         <AssemblyName>Alexinea.Extensions.Configuration.Toml</AssemblyName>
         <PackageId>Alexinea.Extensions.Configuration.Toml</PackageId>
